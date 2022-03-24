@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+/*Formatação do Body*/
+body{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    /*background: #16384c;*/
+    background-image: url("../imagem/fundo.jpg");
+    background-size: cover;
+}
+
+/*Css da classe navegação e da ul e li*/
+
+.navegacao{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 3%;
+    
+    
+}
+
+.navegacao ul{
+    display: flex;
+}
+
+.navegacao ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navegacao ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+    text-align: center;
+}
+
+.navegacao ul li a .icon{
+    position: relative;
+    line-height: 75px;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.navegacao ul li.active a .icon{
+    font-size: 20px;
+    transform: translateY(-6px);
+}
+
+.navegacao ul li a .texto{
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    bottom: 20px;
+    font-weight: 400;
+    transition:0.25s;
+    text-transform: uppercase;
+    transform: scale(0);
+}
+
+.navegacao ul li.active a .texto{
+    transform: scale(1);
+
+}
+
+.indicador{
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.navegacao ul li:nth-child(1).active ~ .indicador{
+    background: #f53b57;
+    box-shadow: 0 15px 25px #f53b5799;
+    transform: translateX(calc(70px * 0));
+}
+
+.navegacao ul li:nth-child(2).active ~ .indicador{
+    background: #5d62fb;
+    box-shadow: 0 15px 25px #5d62fb99;
+    transform: translateX(calc(70px * 1));
+}
+
+.navegacao ul li:nth-child(3).active ~ .indicador{
+    background: #05c46b;
+    box-shadow: 0 15px 25px #05c46b99;
+    transform: translateX(calc(70px * 2));
+}
+
+.navegacao ul li:nth-child(4).active ~ .indicador{
+    background: #ffa801;
+    box-shadow: 0 15px 25px #ffa80199;
+    transform: translateX(calc(70px * 3));
+}
+
+.text h1{
+    position: absolute;
+    display: flex;
+    margin-top: 13%;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 450px;
+}
+
+.textt h1{
+    position: absolute;
+    display: flex;
+    margin-top: 13%;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 500px;
+}
+
+.textto h1{
+    position: absolute;
+    display: flex;
+    margin-top: 13%;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 550px;
+}
+
+.text p{
+    position: absolute;
+    display: flex;
+    margin-top: 16%;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 500px;
+}
+/*Fim do Css da classe navegação e da ul e li*/
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 23%;
+    
+  }
+  
+  .card {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 10px;
+    margin: 20px;
+    width: 400px;
+    height: 200px;
+    transition: all 0.3s ease-out;
+    background-image: url(../imagem/fundo_card.jpg);
+    
+  }
+
+
+  .cards {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 10px;
+    margin: 20px;
+    width: 700px;
+    height: 200px;
+    transition: all 0.3s ease-out;
+    background-image: url(../imagem/fundo.jpg);
+  }
+
+
+  .cardss {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 10px;
+    margin: 20px;
+    width: 900px;
+    height: 200px;
+    transition: all 0.3s ease-out;
+    background-image: url(../imagem/fundo.jpg);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+
+  .cards:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .card p {
+     margin-top: 2%; 
+    color: #000;
+    font-size: 18px;
+
+    margin-left: 2%;
+  }
+  
+
+  .cards p {
+    margin-top: 2%; 
+   color: #000;
+   font-size: 18px;
+   margin-left: 2%;
+ }
+
+ .cardss p {
+    margin-top: 2%; 
+   color: #000;
+   font-size: 18px;
+   margin-left: 2%;
+ }
+
+
+  .image {
+      margin-top: 2%;
+      max-width: 200px;
+      max-height: 150px;
+      border-radius: 5px;    
+  }
+  
+  .blue {
+    border-left: 6px solid #4895ff;
+  }
+   
+  .green {
+    border-left: 6px solid #3bb54a;
+  }
+   
+  .red {
+    border-left: 6px solid #b3404a;
+  }
+
+  .orange {
+    border-left: 6px solid #ffa801;
+  }
+  
+

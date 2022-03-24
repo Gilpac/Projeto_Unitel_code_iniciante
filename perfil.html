@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title> Eventos </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <!--Criação do menu-->
+        <div class="navegacao">
+            <ul>
+                <li class="list active">
+                    <a href="index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="texto">Home</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="sobre.html">
+                        <span class="icon"><ion-icon name="help-circle-outline"></ion-icon>
+                        </span>
+                        <span class="texto">Sobre</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="contactos.html">
+                        <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                        <span class="texto">Contactos</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="perfil.html">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="texto">perfil</span>
+                    </a>
+                </li>
+                
+
+                <div class="indicador">
+                        
+                </div>
+            
+            </ul>
+            
+        </div>
+
+        
+        <div class="textt">
+            <h1>Saíba mais sobre o site.</h1>
+        </div>
+        
+        <div class="row">
+            <div class="cardss blue">  
+                 <img class="image" src="imagem/Gilpac7.jpg" alt="evento">
+                 <p>Gilson Paca Paulo Sebastião <br/> Estudante Universitário <br/> Faculdade de Ciências da Universidade Agostinho Neto
+                 <br/> Residente no Distrito da Maianga/Bairro Prenda  <br/> Contactos: gilpacsebastiao@hotmail.com/gilpacsebastiao96@gmail.com - 928 499 244
+                 <br/></p>
+                 
+               
+                
+            </div>
+
+            
+    </div>
+
+    
+
+
+         <!--Fim-->
+        <!--Fim da Criação das Cards--> 
+
+    
+
+        <script>
+            let list = document.querySelectorAll('.list');
+            function setActiveClass(){
+                list.forEach((item) => 
+                item.classList.remove('active'));
+                this.classList.add('active');   
+            }
+            list.forEach((item) => 
+            item.addEventListener('mouseover' , setActiveClass))
+        </script>
+
+        <script  type ="module" src ="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
+        <script nomodule src ="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+    </body>
+
+
+</html>
